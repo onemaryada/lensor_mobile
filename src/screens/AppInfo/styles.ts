@@ -25,8 +25,10 @@ export const styles = StyleSheet.create({
     overflow: 'hidden',
     ...shadows.medium,
   },
-  logoGradient: {
-    ...StyleSheet.absoluteFillObject,
+  logoImage: {
+    width: '100%',
+    height: '100%',
+    resizeMode: 'cover',
   },
   appName: {
     ...typography.h1,

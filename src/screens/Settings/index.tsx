@@ -96,13 +96,6 @@ export const SettingsScreen = (_props: MainTabScreenProps<'Settings'>) => {
         {key: 'share', label: 'Share App', icon: 'share-variant-outline', onPress: onShareApp},
       ],
     },
-    {
-      label: 'General',
-      items: [
-        {key: 'version', label: 'Version', icon: 'tag-outline', value: APP_INFO.version},
-        {key: 'developer', label: 'Developer', icon: 'account-outline', value: APP_INFO.developer},
-      ],
-    },
   ];
 
   return (

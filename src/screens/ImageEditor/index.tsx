@@ -1,5 +1,5 @@
 import React, {useCallback, useMemo, useState} from 'react';
-import {Pressable, Text, View, ActivityIndicator, type LayoutChangeEvent} from 'react-native';
+import {Pressable, Text, View, ActivityIndicator, Alert, type LayoutChangeEvent} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {useImage} from '@shopify/react-native-skia';
@@ -15,7 +15,7 @@ import {AdjustPanel} from './AdjustPanel';
 import {EditorCanvas} from './EditorCanvas';
 import {makeThumbnail, renderExportBase64} from './exportImage';
 import {FilterPanel} from './FilterPanel';
-import {PermissionModal} from '@/components/PermissionModal';
+
 import {hasCustomSavePermission, setCustomSavePermission} from '@/utils/storage';
 import {styles} from './styles';
 import {useEditorState} from './useEditorState';
@@ -41,7 +41,7 @@ export const ImageEditorScreen = ({route}: RootStackScreenProps<'ImageEditor'>) 
   const [panelMode, setPanelMode] = useState<PanelMode>('filters');
   const [isSaving, setIsSaving] = useState(false);
   const [canvasArea, setCanvasArea] = useState({width: 0, height: 0});
-  const [showPermissionModal, setShowPermissionModal] = useState(false);
+
 
   const thumbnail = image;
 
@@ -98,20 +98,21 @@ export const ImageEditorScreen = ({route}: RootStackScreenProps<'ImageEditor'>) 
     if (hasCustomSavePermission()) {
       performSave();
     } else {
-      setShowPermissionModal(true);
+      Alert.alert(
+        'Storage Permission',
+        "Allow Lesnar to save images directly to your device's photo gallery?",
+        [
+          {text: "Don't Allow", style: 'cancel', onPress: () => {
+            showToast('Cannot save changes to your device without permission.', 'error');
+          }},
+          {text: 'Allow', onPress: () => {
+            setCustomSavePermission(true);
+            performSave();
+          }},
+        ]
+      );
     }
-  }, [image, isSaving, performSave]);
-
-  const handleAllowPermission = useCallback(() => {
-    setShowPermissionModal(false);
-    setCustomSavePermission(true);
-    performSave();
-  }, [performSave]);
-
-  const handleDenyPermission = useCallback(() => {
-    setShowPermissionModal(false);
-    showToast('Cannot save changes to your device without permission.', 'error');
-  }, [showToast]);
+  }, [image, isSaving, performSave, showToast]);
 
   const actions: ActionItem[] = [
     {
@@ -225,11 +226,7 @@ export const ImageEditorScreen = ({route}: RootStackScreenProps<'ImageEditor'>) 
         ))}
       </View>
 
-      <PermissionModal
-        visible={showPermissionModal}
-        onAllow={handleAllowPermission}
-        onDeny={handleDenyPermission}
-      />
+
     </SafeAreaView>
   );
 };

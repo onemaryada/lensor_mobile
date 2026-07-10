@@ -1,19 +1,18 @@
 export const APP_INFO = {
-  name: 'Lensor',
+  name: 'Lesnar',
   version: '1.0.0',
-  developer: 'Keyush Rashiya',
   platform: 'Android',
   reactNativeVersion: '0.86.0',
   license: 'MIT',
-  playStoreUrl: 'https://play.google.com/store/apps/details?id=com.lensor',
-  supportEmail: 'keyushrashiya2002@gmail.com',
+  playStoreUrl: 'https://play.google.com/store/apps/details?id=com.lesnar',
+  supportEmail: 'lesnar6868@gmail.com',
 } as const;
 
 export const STORAGE_KEYS = {
-  onboardingCompleted: 'lensor.onboarding.completed',
+  onboardingCompleted: 'lesnar.onboarding.completed',
 } as const;
 
-export const SAVE_ALBUM_NAME = 'Lensor';
+export const SAVE_ALBUM_NAME = 'Lesnar';
 export const SPLASH_DURATION_MS = 2000;
 
 export const OPEN_SOURCE_LIBRARIES = [

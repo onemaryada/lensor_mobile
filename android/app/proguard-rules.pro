@@ -1,4 +1,4 @@
-# Lensor ProGuard / R8 rules
+# Lesnar ProGuard / R8 rules
 
 # React Native core
 -keep class com.facebook.react.** { *; }

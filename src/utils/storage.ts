@@ -1,7 +1,7 @@
 import {createMMKV} from 'react-native-mmkv';
 import {STORAGE_KEYS} from '@/constants/app';
 
-export const storage = createMMKV({id: 'lensor-storage'});
+export const storage = createMMKV({id: 'lesnar-storage'});
 
 export const isOnboardingCompleted = (): boolean =>
   storage.getBoolean(STORAGE_KEYS.onboardingCompleted) ?? false;

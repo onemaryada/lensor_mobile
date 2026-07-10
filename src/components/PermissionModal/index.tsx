@@ -20,7 +20,7 @@ const PermissionModalComponent = ({visible, onAllow, onDeny}: PermissionModalPro
           </View>
           <Text style={styles.title}>Storage Permission</Text>
           <Text style={styles.description}>
-            Allow Lensor to save images directly to your device's photo gallery?
+            Allow Lesnar to save images directly to your device's photo gallery?
           </Text>
         </View>
         <View style={styles.buttons}>

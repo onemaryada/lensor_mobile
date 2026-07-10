@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
-    <!-- Lensor is an offline app: block all cleartext traffic in production. -->
+    <!-- Lesnar is an offline app: block all cleartext traffic in production. -->
     <base-config cleartextTrafficPermitted="false" />
     <!-- Allow Metro bundler traffic during local development only. -->
     <domain-config cleartextTrafficPermitted="true">

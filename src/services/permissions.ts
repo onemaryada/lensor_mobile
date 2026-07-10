@@ -38,7 +38,7 @@ export const ensureSavePermission = async (): Promise<boolean> => {
   return new Promise(resolve => {
     Alert.alert(
       'Storage Permission',
-      'Allow Lensor to save images to your device?',
+      'Allow Lesnar to save images to your device?',
       [
         {
           text: "Don't allow",

@@ -41,7 +41,7 @@ export const SplashScreen = ({navigation}: RootStackScreenProps<'Splash'>) => {
     <View style={styles.container}>
       <Animated.View style={animatedStyle}>
         <Text style={styles.brand} accessibilityRole="header">
-          Len<Text style={styles.brandAccent}>sor</Text>
+          Les<Text style={styles.brandAccent}>nar</Text>
         </Text>
         <Text style={styles.tagline}>Edit. Enhance. Share.</Text>
       </Animated.View>

@@ -3,27 +3,27 @@ import type {DocumentSection} from '@/components/DocumentScreen';
 export const TERMS_SECTIONS: DocumentSection[] = [
   {
     title: 'Acceptance of Terms',
-    body: 'By downloading or using Lensor you agree to these terms. If you do not agree with any part of them, please do not use the app.',
+    body: 'By downloading or using Lesnar you agree to these terms. If you do not agree with any part of them, please do not use the app.',
   },
   {
     title: 'License to Use',
-    body: 'Lensor grants you a personal, non-exclusive, non-transferable license to use the app on Android devices you own or control, for personal, non-commercial photo editing.',
+    body: 'Lesnar grants you a personal, non-exclusive, non-transferable license to use the app on Android devices you own or control, for personal, non-commercial photo editing.',
   },
   {
     title: 'Your Content',
-    body: 'You retain full ownership of every photo you edit. Lensor never uploads, stores, or claims any rights over your images — all processing stays on your device.',
+    body: 'You retain full ownership of every photo you edit. Lesnar never uploads, stores, or claims any rights over your images — all processing stays on your device.',
   },
   {
     title: 'Acceptable Use',
-    body: 'You agree not to use Lensor to create or distribute content that is unlawful, infringes the rights of others, or violates the policies of the platforms where you share it.',
+    body: 'You agree not to use Lesnar to create or distribute content that is unlawful, infringes the rights of others, or violates the policies of the platforms where you share it.',
   },
   {
     title: 'Intellectual Property',
-    body: 'The Lensor name, logo, interface design, and original assets are the property of the developer. Open-source components remain under their respective licenses.',
+    body: 'The Lesnar name, logo, interface design, and original assets are the property of the developer. Open-source components remain under their respective licenses.',
   },
   {
     title: 'Disclaimer of Warranty',
-    body: 'Lensor is provided “as is” without warranties of any kind. We do our best to keep the app stable, but we cannot guarantee it will always be error-free.',
+    body: 'Lesnar is provided “as is” without warranties of any kind. We do our best to keep the app stable, but we cannot guarantee it will always be error-free.',
   },
   {
     title: 'Limitation of Liability',

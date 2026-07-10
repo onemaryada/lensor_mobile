@@ -1,6 +1,7 @@
-package com.lensor.editor.app
+package com.lesnar.editor.app
 
 import android.os.Bundle
+import com.lesnar.editor.app.R
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
@@ -13,7 +14,7 @@ class MainActivity : ReactActivity() {
    * Returns the name of the main component registered from JavaScript. This is used to schedule
    * rendering of the component.
    */
-  override fun getMainComponentName(): String = "Lensor"
+  override fun getMainComponentName(): String = "Lesnar"
 
   override fun onCreate(savedInstanceState: Bundle?) {
     // Initialize the bootsplash before the React view is created.

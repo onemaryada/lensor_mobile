@@ -13,7 +13,7 @@ export class SaveError extends Error {
 
 /**
  * Persists a base64-encoded JPEG into the device gallery under the
- * Pictures/Lensor album. Returns the saved asset URI.
+ * Pictures/Lesnar album. Returns the saved asset URI.
  */
 export const saveBase64Image = async (base64: string): Promise<string> => {
   const tempPath = `${RNFS.CachesDirectoryPath}/${buildExportFileName()}`;

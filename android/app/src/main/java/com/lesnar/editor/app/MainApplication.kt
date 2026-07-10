@@ -1,4 +1,4 @@
-package com.lensor.editor.app
+package com.lesnar.editor.app
 
 import android.app.Application
 import com.facebook.react.PackageList

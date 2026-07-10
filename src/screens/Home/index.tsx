@@ -46,7 +46,7 @@ export const HomeScreen = ({navigation}: MainTabScreenProps<'Home'>) => {
         <Animated.View entering={FadeInDown.duration(420)}>
           <Text style={styles.greeting}>Welcome to</Text>
           <Text style={styles.brand} accessibilityRole="header">
-            Len<Text style={styles.brandAccent}>sor</Text>
+            Les<Text style={styles.brandAccent}>nar</Text>
           </Text>
         </Animated.View>
 

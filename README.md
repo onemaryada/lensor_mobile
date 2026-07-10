@@ -1,6 +1,6 @@
-# Lensor
+# Lesnar
 
-A production-ready, Android-only photo editing app built with **React Native CLI 0.86 + TypeScript**. Pick a photo, fine-tune it with pro-level adjustments and preset filters rendered through **React Native Skia**, then export it in high quality to `Pictures/Lensor`.
+A production-ready, Android-only photo editing app built with **React Native CLI 0.86 + TypeScript**. Pick a photo, fine-tune it with pro-level adjustments and preset filters rendered through **React Native Skia**, then export it in high quality to `Pictures/Lesnar`.
 
 Everything runs **completely offline** — no backend, no analytics, no tracking.
 
@@ -15,7 +15,7 @@ Everything runs **completely offline** — no backend, no analytics, no tracking
   - 9 adjustments: Brightness, Contrast, Saturation, Blur, Sharpen, Warmth, Exposure, Vignette, Grayscale — one combined Skia color matrix, blur image filter, and an SkSL unsharp-mask runtime shader
   - 11 preset filters (Original, Vintage, Cool, Warm, Mono, Noir, Retro, Fade, Dream, Bright, HDR) with live Skia thumbnails
   - Sliders write straight to Reanimated shared values → the preview updates at 60fps without touching the JS thread
-- High-quality export: the original full-resolution image is re-rendered offscreen through the same filter pipeline (capped at 4096px, JPEG q95) and saved to the `Pictures/Lensor` album with unique timestamped filenames
+- High-quality export: the original full-resolution image is re-rendered offscreen through the same filter pipeline (capped at 4096px, JPEG q95) and saved to the `Pictures/Lesnar` album with unique timestamped filenames
 - Settings module: Privacy Policy, Terms & Conditions, App Info (incl. open-source libraries), Rate App, Share App
 - Success/error snackbar, loading and empty states, accessibility labels throughout
 
@@ -68,7 +68,7 @@ Conventions: absolute imports via `@/` (babel module-resolver + tsconfig paths),
 
 - **react-native-image-filter-kit** is unmaintained and incompatible with the New Architecture → replaced by **@shopify/react-native-skia**, which also removed the need for react-native-view-shot and react-native-image-resizer (the offscreen surface handles scaling/encoding).
 - **react-native-fs** → **@dr.pogodin/react-native-fs** (actively maintained, New Architecture support).
-- **@react-native-camera-roll/camera-roll** added: it is the correct MediaStore path for saving into `Pictures/Lensor` under scoped storage.
+- **@react-native-camera-roll/camera-roll** added: it is the correct MediaStore path for saving into `Pictures/Lesnar` under scoped storage.
 - **react-native-fast-image** is not New-Architecture ready → a lightweight `AppImage` component (loading/error states + fade-in) covers its use here.
 - **react-native-blur** skipped: all blurring is done in Skia.
 - **Firebase** not integrated — no backend functionality is required for v1, per spec.
@@ -82,4 +82,4 @@ Conventions: absolute imports via `@/` (babel module-resolver + tsconfig paths),
 - Adaptive app icon (vector foreground + brand color background, incl. monochrome layer)
 - Bootsplash theme + vector logo committed; regenerate pixel-perfect assets with `npm run bootsplash`
 - App locked to portrait
-# lensor_mobile
+# lesnar_mobile
