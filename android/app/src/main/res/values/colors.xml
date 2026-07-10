@@ -1,0 +1,6 @@
+<resources>
+    <color name="bootsplash_background">#FFFFFF</color>
+    <color name="appBackground">#F8FAFC</color>
+    <color name="brandPrimary">#4F46E5</color>
+    <color name="brandAccent">#8B5CF6</color>
+</resources>

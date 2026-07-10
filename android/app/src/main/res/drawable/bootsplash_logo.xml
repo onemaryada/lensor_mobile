@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="192dp"
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+    <!-- Rounded square badge -->
+    <path
+        android:pathData="M40,8 L152,8 A32,32 0 0 1 184,40 L184,152 A32,32 0 0 1 152,184 L40,184 A32,32 0 0 1 8,152 L8,40 A32,32 0 0 1 40,8 Z"
+        android:fillColor="#4F46E5" />
+    <!-- Lens ring -->
+    <path
+        android:pathData="M96,52 A44,44 0 1 1 95.9,52 Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="10"
+        android:fillColor="#00000000" />
+    <!-- Aperture dot -->
+    <path
+        android:pathData="M96,82 A14,14 0 1 1 95.9,82 Z"
+        android:fillColor="#8B5CF6" />
+</vector>
